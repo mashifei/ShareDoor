@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneBookActivity"  android:orientation="vertical">
+    
+	<LinearLayout 
+	     android:layout_width="fill_parent"
+	     android:layout_height="40dp"
+	     android:orientation="horizontal">
+
+		<EditText
+		    android:id="@+id/editText_phonelist"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:ems="10"
+		    android:inputType="phone" >
+		    <requestFocus />
+		</EditText>
+	    <Button android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:id="@+id/button_chooseUser"
+	        android:layout_height="40dp"
+	        android:text="选择"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="fill_parent"
+	   	android:layout_height="0dp"
+	   	android:layout_weight="1" android:orientation="horizontal">
+		<ScrollView
+			android:layout_width="0dp"
+			android:layout_weight="3"
+		   	android:layout_height="fill_parent">
+		    <TextView
+		        android:id="@+id/textView_content"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:text="分享地址为http://ddfd">
+		    </TextView>
+		</ScrollView>
+		
+	    <Button android:layout_width="0dp"
+	        android:id="@+id/button_sendMessage"
+	        android:layout_weight="1"
+	        android:layout_height="40dp"
+	        android:text="发送"/>
+	</LinearLayout>
+</LinearLayout>
